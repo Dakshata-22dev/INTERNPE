@@ -1,0 +1,141 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1A1A1A;  
+    color: #E0E0E0;             
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.todo-container {
+    background-color: #2C2C2C;  
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #FF4081;  
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 5px;
+    background: linear-gradient(135deg, #FF4081, #FF9800);  
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 12px;
+    border: 2px solid #FF4081;  
+    border-radius: 6px;
+    background-color: #333;
+    font-size: 1rem;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #FF9800;  
+}
+
+button.add-button {
+    padding: 12px;
+    background-color: #FF4081; 
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button.add-button:hover {
+    background-color: #FF9800; 
+    transform: scale(1.1);
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #444;  
+    padding: 12px;
+    margin-bottom: 10px;
+    border-left: 6px solid #FF4081;  
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+li:hover {
+    background-color: #555;  
+    transform: scale(1.02);
+}
+
+li.completed {
+    background-color: #388E3C;  
+    border-left-color: #4CAF50; 
+}
+
+li.completed p {
+    text-decoration: line-through;
+    color: #C8E6C9; 
+}
+
+button.delete {
+    background-color: #f44336; 
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+button.delete:hover {
+    background-color: #d32f2f; 
+}
+
+button.complete {
+    background-color: #FF9800; 
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+button.complete:hover {
+    background-color: #F57C00; 
+}
